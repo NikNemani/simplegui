@@ -139,7 +139,7 @@ one_col = [
 layout = [[sg.Column(one_col, element_justification='c')]]
 
 # --------------------------------- Create Window ---------------------------------
-window = sg.Window('Audio Downloader', layout,resizable=True)
+window = sg.Window('Media Downloader', layout,resizable=True)
 
 # ----- Run the Event Loop -----
 # --------------------------------- Event Loop ---------------------------------
@@ -186,7 +186,7 @@ while True:
             window['-Download-'].update(disabled = False)
         else :
             window['-Download-'].update(disabled = True)
-    elif event == '-VIDEOCB-':    # Audio Checkbox
+    elif event == '-VIDEOCB-':    # Video Checkbox
         window['-TOUT1-'].update("")
         window['-TOUT2-'].update("")
         videocb = values['-VIDEOCB-']  
